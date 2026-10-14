@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Giovanna Pança — Atriz e Assistente de Direção</title>
+<meta name="description" content="Atriz e Assistente de Direção com 6 anos de trajetória no teatro, agora explorando audiovisual e danças diaspóricas. São Paulo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#140a28; --bg2:#1d1137; --ink:#f4eee3; --mute:#b9aed0; --line:#3a2a60; --accent:#f2b632; --on-accent:#140a28;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){--bg:#f6f0e6;--bg2:#ece3d3;--ink:#1c1030;--mute:#5d4f78;--line:#cfc2ab;--accent:#5a2bb0;--on-accent:#fff}
+}
+:root[data-theme="light"]{--bg:#f6f0e6;--bg2:#ece3d3;--ink:#1c1030;--mute:#5d4f78;--line:#cfc2ab;--accent:#5a2bb0;--on-accent:#fff}
+:root[data-theme="dark"]{--bg:#140a28;--bg2:#1d1137;--ink:#f4eee3;--mute:#b9aed0;--line:#3a2a60;--accent:#f2b632;--on-accent:#140a28}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0}
+h2{font-size:clamp(30px,5vw,46px);line-height:1.1;margin-bottom:28px}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+nav b{font-family:var(--serif);font-weight:700;font-size:19px}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+nav ul a{text-decoration:none;color:var(--mute)}
+nav ul a:hover{color:var(--ink)}
+@media(max-width:640px){nav ul li:nth-child(n+3):not(:last-child){display:none}nav ul{gap:16px}}
+
+.hero{padding:72px 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:end}
+.hero h1{font-weight:700;font-size:clamp(64px,13vw,168px);line-height:.88;letter-spacing:-.03em}
+.hero h1 span{display:block;font-style:italic;font-weight:400;margin-left:.6em}
+.role{margin:32px 0 8px;font-size:20px;color:var(--ink)}
+.place{margin:0;color:var(--mute)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;border:1.5px solid var(--ink);text-decoration:none;font-weight:500;font-size:16px;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.main:hover{filter:brightness(1.08);background:var(--accent);color:var(--on-accent)}
+.frame{aspect-ratio:3/4;border-radius:200px 200px 8px 8px;background:var(--bg2);border:1.5px solid var(--line);display:grid;place-items:center;text-align:center;padding:24px;color:var(--mute);font-size:14px;position:relative;overflow:hidden}
+.frame::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 65%)}
+.frame span{position:relative}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:780px){.hero .wrap{grid-template-columns:1fr}.frame{max-width:320px}}
+
+section{padding:80px 0;border-top:1px solid var(--line)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.about p{margin:0 0 18px;font-family:var(--serif);font-size:clamp(20px,2.6vw,26px);line-height:1.5}
+.facts{display:grid;gap:0;align-content:start;margin:0}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--mute)}.facts dd{margin:0;font-weight:500;text-align:right}
+@media(max-width:780px){.about{grid-template-columns:1fr}}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filters button{font:500 15px var(--sans);padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:none;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.work{display:grid;grid-template-columns:90px 1fr;gap:8px 24px;padding:26px 0;border-top:1px solid var(--line)}
+.work[hidden]{display:none}
+.work time{font-family:var(--serif);font-size:30px;line-height:1.1;color:var(--accent)}
+.work h3{font-size:26px;font-weight:700;line-height:1.2}
+.work .tag{display:inline-block;margin-left:10px;font:500 13px var(--sans);color:var(--mute);border:1px solid var(--line);border-radius:999px;padding:2px 10px;vertical-align:middle}
+.work p{margin:6px 0 0;color:var(--mute);font-size:16px}
+.work p b{color:var(--ink);font-weight:500}
+@media(max-width:560px){.work{grid-template-columns:1fr}}
+
+.videos{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.vid{display:flex;flex-direction:column;gap:14px;padding:22px;border:1.5px solid var(--line);border-radius:14px;background:var(--bg2);text-decoration:none;transition:border-color .2s}
+.vid:hover{border-color:var(--accent)}
+.play{width:44px;height:44px;border-radius:50%;background:var(--accent);display:grid;place-items:center}
+.play::after{content:"";border-left:14px solid var(--on-accent);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.vid h3{font-size:22px;font-weight:700;line-height:1.25}
+.vid p{margin:0;color:var(--mute);font-size:15px}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery .ph{aspect-ratio:3/4;border-radius:10px;background:var(--bg2);border:1.5px dashed var(--line);display:grid;place-items:center;color:var(--mute);font-size:14px}
+.gallery img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:10px}
+@media(max-width:780px){.gallery{grid-template-columns:repeat(2,1fr)}}
+
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.contact ul{list-style:none;margin:0;padding:0}
+.contact li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact li span{color:var(--mute)}
+.contact a{font-weight:500}
+@media(max-width:780px){.contact{grid-template-columns:1fr}}
+footer{padding:32px 0 48px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>Giovanna Pança</b>
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#trajetoria">Trabalhos</a></li>
+    <li><a href="#videos">Vídeos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>Giovanna<span>Pança</span></h1>
+    <p class="role">Atriz e Assistente de Direção</p>
+    <p class="place">São Paulo, SP</p>
+    <div class="cta">
+      <a class="btn main" href="#videos">Ver vídeos</a>
+      <a class="btn" href="#contato">Falar comigo</a>
+    </div>
+  </div>
+  <div class="frame"><img src="images/giovanna-principal.jpg" alt="Retrato de Giovanna Pança, de perfil, com luz rosada e cabelo curto" style="object-position:50% 25%"></div>
+</div></header>
+
+<section id="sobre"><div class="wrap about">
+  <div>
+    <h2>Sobre</h2>
+    <p>Atriz e Assistente de Direção com 6 anos de trajetória e experiência em diversos espetáculos teatrais, entre adaptações livres e obras autorais.</p>
+    <p>Hoje, investe em conhecimentos no audiovisual e aprimora a dança, saindo das danças brasileiras para explorar as danças diaspóricas.</p>
+  </div>
+  <dl class="facts">
+    <div><dt>Atuação</dt><dd>Atriz</dd></div>
+    <div><dt>Também</dt><dd>Assistente de direção e produção</dd></div>
+    <div><dt>Dança</dt><dd>Brasileiras e diaspóricas</dd></div>
+    <div><dt>Altura</dt><dd>1,58 m</dd></div>
+    <div><dt>Mora em</dt><dd>São Paulo, SP</dd></div>
+  </dl>
+</div></section>
+
+<section id="trajetoria"><div class="wrap">
+  <h2>Principais trabalhos</h2>
+  <div class="filters" role="group" aria-label="Filtrar por tipo">
+    <button aria-pressed="true" data-f="todos">Todos</button>
+    <button aria-pressed="false" data-f="Teatro">Teatro</button>
+    <button aria-pressed="false" data-f="Cinema">Cinema</button>
+    <button aria-pressed="false" data-f="Outro">Carnaval</button>
+  </div>
+  <div id="works">
+    <article class="work" data-t="Cinema"><time>2026</time><div><h3>Te amo, Vó<span class="tag">Cinema</span></h3><p>Curta universitário. Atuação ao lado de Maria Aparecida.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2026</time><div><h3>Monólogos Urbanos<span class="tag">Teatro</span></h3><p><b>Assistente de direção e produção.</b> Direção de Diogo Guermandi e Eber Rodrigues.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2026</time><div><h3>Caminhos de Odù<span class="tag">Teatro</span></h3><p><b>Coro.</b> Direção de Eduardo Stefano e JB Oliveira. Coletivo Na Cena, em festival na Galeria Olido.</p></div></article>
+    <article class="work" data-t="Outro"><time>2025</time><div><h3>Pérola Negra<span class="tag">Carnaval</span></h3><p><b>Comissão de frente.</b> Direção de Ale Batista, no Sambódromo do Anhembi. Campeã do Grupo de Acesso 2 do Carnaval de São Paulo.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2025</time><div><h3>Meu Brasil, brasileiro<span class="tag">Teatro</span></h3><p><b>Corpo de dança.</b> Direção de Rodney Elias, no Teatro Curso Ator (L&amp;J Produções). Espetáculo de dança sobre danças brasileiras em contexto colonialista.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2023</time><div><h3>Gambiarra<span class="tag">Teatro</span></h3><p>Espetáculo de improviso em que o público sugere os temas dos jogos. Direção de Diogo Guermandi e Mariana Lopes, no Festival Satyrianas.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2022</time><div><h3>Divertidamente<span class="tag">Teatro</span></h3><p><b>Raiva.</b> Direção de Georgia Avila e Mariana Lopes.</p></div></article>
+    <article class="work" data-t="Teatro"><time>2021</time><div><h3>Monólogos Urbanos<span class="tag">Teatro</span></h3><p><b>Marlene, a carimbadora.</b> Criação coletiva com direção de Diogo Guermandi e Mariana Lopes: monólogos de 10 minutos, repetidos 10 vezes para públicos diferentes.</p></div></article>
+  </div>
+</div></section>
+
+<section id="videos"><div class="wrap">
+  <h2>Vídeos</h2>
+  <div class="videos">
+    <a class="vid" href="https://www.youtube.com/watch?v=52tzPXZwWE0" target="_blank" rel="noopener"><div class="play"></div><h3>Vídeo de apresentação</h3><p>Conheça meu trabalho em poucos minutos.</p></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=-TQtFc1Vpdo" target="_blank" rel="noopener"><div class="play"></div><h3>Te amo, Vó</h3><p>Cena de atuação com Maria Aparecida.</p></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=yzZ2hljewKI" target="_blank" rel="noopener"><div class="play"></div><h3>Monólogo: Indecisão</h3><p>Comédia.</p></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=R-R85MkxYWY" target="_blank" rel="noopener"><div class="play"></div><h3>Monólogo: Pedido de ajuda</h3><p>Drama. Direção de Heitor Martinez e Ricardo Conti, texto de Ricardo Conti.</p></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=lvnWgELh7MA" target="_blank" rel="noopener"><div class="play"></div><h3>Monólogo: Fiz uma música</h3><p>Romance. Direção de Heitor Martinez e Ricardo Conti, texto de Ricardo Conti.</p></a>
+    <a class="vid" href="https://www.youtube.com/watch?v=a-Gd9XW1qSk" target="_blank" rel="noopener"><div class="play"></div><h3>Monólogos Urbanos: Marlene</h3><p>Trecho do espetáculo de teatro.</p></a>
+  </div>
+</div></section>
+
+<section id="fotos"><div class="wrap">
+  <h2>Fotos</h2>
+  <div class="gallery">
+<img src="images/giovanna-01-retrato-escuro.jpg" alt="Retrato frontal de Giovanna Pança sobre fundo escuro, olhando para a câmera" loading="lazy">
+<img src="images/giovanna-02-olhar-ombro.jpg" alt="Retrato em preto e branco de Giovanna olhando por cima do ombro" loading="lazy">
+<img src="images/giovanna-03-bracos-cruzados.jpg" alt="Giovanna de óculos, de olhos fechados, com os braços cruzados em preto e branco" loading="lazy">
+<img src="images/giovanna-04-banco.jpg" alt="Giovanna sentada em um banco alto, com as mãos na gola da camiseta" loading="lazy">
+<img src="images/giovanna-05-oculos-escuro.jpg" alt="Retrato em preto e branco de Giovanna de óculos, olhando para baixo, em tons escuros" loading="lazy">
+<img src="images/giovanna-06-corpo-inteiro.jpg" alt="Giovanna em pé, de corpo inteiro, com camiseta preta e calça jeans" loading="lazy">
+</div>
+</div></section>
+
+<section id="contato"><div class="wrap contact">
+  <div>
+    <h2>Vamos trabalhar juntos</h2>
+    <p style="color:var(--mute);margin:0 0 24px">Para testes, convites e projetos, fale comigo ou com meu agente.</p>
+    <a class="btn main" href="https://wa.me/5511976446867" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+  <ul>
+    <li><span>Telefone</span><a href="tel:+5511976446867">(11) 97644-6867</a></li>
+    <li><span>Instagram</span><a href="https://instagram.com/_pancag" target="_blank" rel="noopener">@_pancag</a></li>
+    <li><span>Agente</span><a href="https://anderson-cassimiro.elencodigital.com.br" target="_blank" rel="noopener">Anderson Cassimiro</a></li>
+    <li><span>Perfil completo</span><a href="https://elencodigital.com.br/GiovannaPanca" target="_blank" rel="noopener">Elenco Digital</a></li>
+  </ul>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Giovanna Pança</span><span>São Paulo, SP</span></div></footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.filters button'),items=document.querySelectorAll('.work');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    var f=b.dataset.f;
+    items.forEach(function(w){w.hidden=!(f==='todos'||w.dataset.t===f)});
+  })});
+})();
+</script>
+</body>
+</html>
