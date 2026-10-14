@@ -3,21 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
 <title>Giovanna Pança — Atriz e Assistente de Direção</title>
 <meta name="description" content="Atriz e Assistente de Direção com 6 anos de trajetória no teatro, agora explorando audiovisual. São Paulo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#140a28; --bg2:#1d1137; --ink:#f4eee3; --mute:#b9aed0; --line:#3a2a60; --accent:#f2b632; --on-accent:#140a28;
+  color-scheme:dark;
+  --bg:#000000; --bg2:#121212; --ink:#ffffff; --mute:#b3b3b3; --line:#2e2e2e; --accent:#ffd60a; --on-accent:#000000;
   --serif:"Fraunces",Georgia,"Times New Roman",serif; --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
 }
-@media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]){--bg:#f6f0e6;--bg2:#ece3d3;--ink:#1c1030;--mute:#5d4f78;--line:#cfc2ab;--accent:#5a2bb0;--on-accent:#fff}
-}
-:root[data-theme="light"]{--bg:#f6f0e6;--bg2:#ece3d3;--ink:#1c1030;--mute:#5d4f78;--line:#cfc2ab;--accent:#5a2bb0;--on-accent:#fff}
-:root[data-theme="dark"]{--bg:#140a28;--bg2:#1d1137;--ink:#f4eee3;--mute:#b9aed0;--line:#3a2a60;--accent:#f2b632;--on-accent:#140a28}
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
@@ -32,13 +29,13 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 nav b{font-family:var(--serif);font-weight:700;font-size:19px}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
 nav ul a{text-decoration:none;color:var(--mute)}
-nav ul a:hover{color:var(--ink)}
+nav ul a:hover{color:var(--accent)}
 @media(max-width:640px){nav ul li:nth-child(n+3):not(:last-child){display:none}nav ul{gap:16px}}
 
 .hero{padding:72px 0 88px}
 .hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:end}
 .hero h1{font-weight:700;font-size:clamp(64px,13vw,168px);line-height:.88;letter-spacing:-.03em}
-.hero h1 span{display:block;font-style:italic;font-weight:400;margin-left:.6em}
+.hero h1 span{display:block;font-style:italic;font-weight:400;margin-left:.6em;color:var(--accent)}
 .role{margin:32px 0 8px;font-size:20px;color:var(--ink)}
 .place{margin:0;color:var(--mute)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
@@ -46,7 +43,7 @@ nav ul a:hover{color:var(--ink)}
 .btn:hover{background:var(--ink);color:var(--bg)}
 .btn.main{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
 .btn.main:hover{filter:brightness(1.08);background:var(--accent);color:var(--on-accent)}
-.frame{aspect-ratio:3/4;border-radius:200px 200px 8px 8px;background:var(--bg2);border:1.5px solid var(--line);display:grid;place-items:center;text-align:center;padding:24px;color:var(--mute);font-size:14px;position:relative;overflow:hidden}
+.frame{aspect-ratio:3/4;border-radius:200px 200px 8px 8px;background:var(--bg2);border:1.5px solid var(--accent);display:grid;place-items:center;text-align:center;padding:24px;color:var(--mute);font-size:14px;position:relative;overflow:hidden}
 .frame::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,color-mix(in srgb,var(--accent) 35%,transparent),transparent 65%)}
 .frame span{position:relative}
 .frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
@@ -61,8 +58,9 @@ section{padding:80px 0;border-top:1px solid var(--line)}
 @media(max-width:780px){.about{grid-template-columns:1fr}}
 
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-.filters button{font:500 15px var(--sans);padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:none;color:var(--ink);cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button{font:500 15px var(--sans);padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:none;color:var(--ink);cursor:pointer;transition:border-color .2s}
+.filters button:hover{border-color:var(--accent)}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 .work{display:grid;grid-template-columns:90px 1fr;gap:8px 24px;padding:26px 0;border-top:1px solid var(--line)}
 .work[hidden]{display:none}
 .work time{font-family:var(--serif);font-size:30px;line-height:1.1;color:var(--accent)}
@@ -90,6 +88,7 @@ section{padding:80px 0;border-top:1px solid var(--line)}
 .contact li{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .contact li span{color:var(--mute)}
 .contact a{font-weight:500}
+.contact li a:hover{color:var(--accent)}
 @media(max-width:780px){.contact{grid-template-columns:1fr}}
 footer{padding:32px 0 48px;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
